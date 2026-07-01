@@ -33,7 +33,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Generate Gradle wrapper (project has none)
-        run: gradle wrapper --gradle-version 8.7
+        run: gradle wrapper --gradle-version 9.3.1
 
       - name: Write .env (Gemini API key)
         run: echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" > .env
